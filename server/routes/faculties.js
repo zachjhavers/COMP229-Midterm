@@ -81,6 +81,19 @@ router.post("/details/:id", (req, res, next) => {
       "Subject": req.body.Subject
 });
 
+  faculty.updateOne({_id: id}, updatedFaculty, (err) => {
+    if(err)
+    {
+        console.log(err);
+        res.end(err);
+    }
+    else
+    {
+        // refresh the Contact list
+        res.redirect('/faculties');
+    }
+  });
+
 });
 
 // GET - process the delete
