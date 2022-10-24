@@ -1,0 +1,56 @@
+<% include ../partials/header.ejs %>
+
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+
+                <div class="form-group">
+                    <label for="facultyIdTextFeild">Faculty ID</label>
+                    <input type="text" class="form-control"
+                        id="facultyIdTextFeild"
+                        placeholder="Enter Contact Faculty ID"
+                        name="Facultyid" required>
+                </div>
+                
+
+                <div class="form-group">
+                    <label for="facultyNameTextFeild">Faculty Name</label>
+                    <input type="text" class="form-control"
+                        id="facultyNameTextFeild"
+                        placeholder="Enter Faculty Name"
+                        name="Facultyname" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="facultyDepartmentTextFeild">Faculty Department</label>
+                    <input type="text" class="form-control"
+                        id="facultyDepartmentTextFeild"
+                        placeholder="Enter Faculty Department"
+                        name="Department" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="facultySubjectTextFeild">Faculty Subject</label>
+                    <input type="text" class="form-control"
+                        id="facultySubjectTextFeild"
+                        placeholder="Enter Faculty Subject"
+                        name="Subject" required>
+                </div>
+
+                <button class="btn btn-primary" type="submit">
+                    <i class="fas fa-edit"></i>Submit
+                </button>
+
+                <a href="/contact-list" class="btn btn-warning">
+                    <i class="fas fa-undo"></i>Cancel</a>
+
+            </form>
+            
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer.ejs %>
