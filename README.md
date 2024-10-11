@@ -2,4 +2,4 @@
 
 ## Welcome to the MidTerm Project - The Faculty Information App
 
-please use **`npm install`** to install project dependencies
+Please use **`npm install`** to install project dependencies
